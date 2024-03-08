@@ -1,10 +1,10 @@
 
 # Authors
-- Added author [x] 
+- [x] Added author
   - `POST: /api/authors/add`
-- Update of author [] 
+- [] Update of author
   - `PUT: /api/authors/update`
-- Returning all books by author * [] 
+- [] Returning all books by author *
   - `GET /api/authors/:id/books`
 
 # Books
