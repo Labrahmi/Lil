@@ -1,6 +1,21 @@
 # Bookstore API
 
-## Authors
+## Description
+This is a RESTful API for a bookstore. The API is built using Node.js, Express.js, and MongoDB. The API provides endpoints for managing books, authors, and orders.
+
+## Installation
+1. Clone the repository
+2. Run `npm install` to install the dependencies
+3. copy the .env.example file to .env
+```bash
+cp .env.example .env
+```
+4. Run `npm start` to start the server
+
+## Usage
+The API provides the following endpoints:
+
+### Authors
 - [x] Return all authors _(* support pagination)_
   - `GET: /api/authors`
 - [x] Add author
@@ -10,7 +25,7 @@
 - [x] Returning all books by author _(* support pagination)_
   - `GET: /api/authors/:id/books`
 
-## Books
+### Books
 - [x] Adding one or more books in one request.
   - `POST: /api/books/add`
 - [x] Deleting a book
@@ -26,12 +41,12 @@
 - [x] Returning books according to the country of the author _(* support pagination)_
   - `GET: /api/books/author/country/:country`
 
-## Orders
+### Orders
 - [x] Returning all orders
   - `GET: /api/orders`
 - [x] Adding an Order
   - `POST: /api/orders/add`
-- [x] Finding the Order with Maximum `totalPrice` in a Date Range
+- [x] Finding the Order with Maximum totalPrice in a Date Range
   - `GET: /api/orders/maxTotalPrice`
 - [x] Finding the 3 Most Popular Genres in a Date Range
   - `GET: /api/orders/genres/popular`
