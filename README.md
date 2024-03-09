@@ -5,12 +5,25 @@ This is a RESTful API for a bookstore. The API is built using Node.js, Express.j
 
 ## Installation
 1. Clone the repository
-2. Run `npm install` to install the dependencies
-3. copy the .env.example file to .env
+```bash
+git clone git@github.com:Labrahmi/Lil.git
+cd Lil
+```
+######
+2. Install the dependencies
+```bash
+npm install
+```
+######
+3. Create an environment file
 ```bash
 cp .env.example .env
 ```
-4. Run `npm start` to start the server
+######
+4. Start the server
+```bash
+npm start
+```
 
 ## Usage
 The API provides the following endpoints:
