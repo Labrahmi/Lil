@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 
 const AuthorSchema = new mongoose.Schema({
-  name: { type: String, default: "unknown" },
-  country: { type: String, default: "unknown" },
+  name: { type: String, default: "Unknown" },
+  country: { type: String, default: "Unknown" },
 });
 
 //  Model Name                          Schema      Collection Name

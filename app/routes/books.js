@@ -10,6 +10,6 @@ router.delete('/:id/delete', cacheNoStore, controller.deleteBookById);
 router.get('/search', cacheNoStore, controller.listSearchedBooks);
 router.get('/genre/:genre', cacheNoStore, controller.listBooksByGenre);
 router.get('/publishingYear', cacheNoStore, controller.listBooksByYear);
-router.get('/author/country', cacheNoStore, controller.listBooksByAuthorCountry);
+router.get('/author/country/:country', cacheNoStore, controller.listBooksByAuthorCountry);
 
 export default router;

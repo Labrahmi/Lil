@@ -11,5 +11,4 @@ router.get('/genres/popular', cacheNoStore, controller.listPopularGenres);
 router.get('/profit', cacheNoStore, controller.listTotalProfit);
 router.get('/authors/popular', cacheNoStore, controller.listPopularAuthors);
 
-
 export default router;

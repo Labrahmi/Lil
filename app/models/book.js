@@ -3,7 +3,10 @@ import mongoose from 'mongoose';
 const { Types } = mongoose;
 
 const BookSchema = new mongoose.Schema({
-  title: String,
+  title: {
+    type: String,
+    default: 'Unknown',
+  },
   publishingYear: Number,
   genres: [String],
   authors: [Types.ObjectId],
