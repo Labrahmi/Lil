@@ -36,7 +36,16 @@ export const getBooksBySearch = async (searchParams, page, pageSize) => {
   if (searchParams.genres) query.genres = { $in: searchParams.genres };
   if (searchParams.authors) query.authors = { $in: searchParams.authors };
   const skip = (page - 1) * pageSize;
-  const books = await Book.find(query).skip(skip).limit(pageSize);
+  const books = await Book.find({
+    $or: [
+      { title: {
+        $regex: new RegExp(query.title, 'i')
+      } },
+      { publishingYear: query.publishingYear },
+      { genres: query.genres },
+      { authors: query.authors }
+    ]
+  }).skip(skip).limit(pageSize);
   return books;
 };
 

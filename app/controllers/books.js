@@ -17,6 +17,7 @@ export const addBooks = async (req, res) => {
   try {
     let booksList = req.body.booksList;
     if (!booksList) {
+      console.log(req.body);
       return res.status(400).send("No books provided");
     }
     let addedBooks = await postBook(booksList);
